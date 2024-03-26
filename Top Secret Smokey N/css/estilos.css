@@ -1,0 +1,279 @@
+.titulo {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif'
+}
+.contenedor{
+	width: 100%;
+	max-width: 1170px;
+	margin: auto;
+}
+
+/*CABECERA*/
+header{
+	width: 100%;
+	height: 200px;
+	background-color: #FFFFFF;
+}
+
+.logo{
+	padding: 25px 0;
+}
+
+.logo img{
+	width: 200px;
+	display: block;
+	margin: auto;
+	
+}
+
+.menu{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 430px;
+	margin: auto;
+}
+
+.menu a{
+	text-decoration: none;
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-shadow: -0px -0px 20px black;
+}
+
+.menu a:hover{
+	color: red;
+	
+}
+
+.banner{
+	width: 100%;
+	height: 500px;
+	background-image: url("../img/banner-inicio.png");
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.banner > div{
+	widows: 100%;
+	height: 100%;
+	background-color: rgba(209, 219, 189, 0.3);
+}
+
+.llamada-accion{
+	text-align: center;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.llamada-accion p{
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: -2px -2px 5px black;
+	margin-bottom: 20px;
+}
+
+.llamada-accion h2{
+	font-size: 48px;
+	color: white;
+	width: 100%;
+	padding: 40px 0;
+	background-color: rgba(0,0,0,0.57);
+	max-width: 470px;
+	text-shadow: -3px -3px 8px black;
+}
+
+.llamada-accion h2:hover{
+	background-color: rgba(0,0,0,0.8);
+	color: red;
+}
+
+.llamada-accion a{
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	padding: 10px 50px;
+	background-color:  rgba(0,0,0,0.47);
+	margin-top: 35px;
+	
+	transition: all 0.3s ease-in-out;
+}
+
+.llamada-accion a:hover{
+	background-color: rgba(0,0,0,0.8);
+	color: red;
+}
+
+/*FIN DE BANNER PRINCIPAL*/
+
+.bienvenida{
+	width: 100%;
+	background-color: #a00000;
+	margin-top: 2px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.bienvenida h3{
+	font-size: 26px;
+	padding-top: 40px;
+	padding-bottom: 35px;
+	text-shadow: -1.5px -1.5px 8px black;
+}
+
+.bienvenida p{
+	font-size: 18px;
+	padding-bottom: 35px;
+	line-height: 1.7em;
+	max-width: 370px;
+	margin: 0 auto;
+}
+
+.topsecret > .contenedor{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.foto-equipo{
+	width: 100%;
+	max-width: 570px;
+}
+
+.foto-equipo img{
+	width: 100%;
+}
+
+.smokey{
+	text-align: center;
+	padding: 15px 0px;
+	max-width: 570px;
+	
+}
+
+.smokey p:nth-child(1){
+	font-size: 14px;
+	color: #000000;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #a00000;
+}
+
+.topsecret h3{
+	padding-top: 20px;
+	padding-bottom: 30px;
+	color: #a00000;
+	font-size: 20px;
+}
+
+.smokey p:nth-child(3){
+	font-size: 14px;
+	color: #3c1c22;
+	padding-bottom: 25px;
+}
+
+.smokey p:nth-child(4){
+	font-size: 15px;
+	color: #646464;
+	padding-bottom: 20px;
+}
+
+.smokey p:hover{
+	color: black;
+	
+}
+
+.smokey a{
+	font-size: 15px;
+	color: #a00000;
+}
+
+.smokey a:hover{
+	color: black;
+}
+
+/*SECCION SOBRE NOSOTROS*/
+
+.topsecret{
+	padding-bottom: 80px;
+}
+
+@media all and (min-width: 769px){
+	.topsecret{
+		padding-top: 80px;
+	}
+	.foto-equipo{
+		margin-right: 30px;
+	}
+	.smokey{
+		padding-left: 30px;
+		text-align: left;
+	}
+}
+
+/*PIE DE PÁGINA*/
+
+.top-footer{
+	background-color: #6F0000;
+	height: 25px;
+}
+
+.center-footer{
+	background-color: #a00000;
+}
+
+.center-footer .contenedor{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.center-footer .widget{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 35px;
+	color: #FFFFFF;
+	
+	max-width: 270px;
+	margin: 0 auto;
+}
+
+.center-footer .widget h4{
+	padding-bottom: 35px;
+	font-size: 18px;
+}
+
+.center-footer .widget p{
+	font-size: 14px;
+}
+
+.bottom-footer{
+	background-color: #6F0000;
+	height: 25px;
+}
+
+.bottom-footer p{
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: center;
+}
+
+/*FIN DE PIE DE PÁGINA*/
+
